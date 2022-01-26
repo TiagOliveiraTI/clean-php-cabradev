@@ -1,0 +1,17 @@
+{
+    "name": "tiagoliveirati/clean-php-cabradev",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tiagoliveirati\\CleanPhpCabradev\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tiago Oliveira",
+            "email": "dev.tiago.oliveira@gmail.com"
+        }
+    ],
+    "require": {}
+}
