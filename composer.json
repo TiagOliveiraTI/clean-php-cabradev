@@ -3,8 +3,10 @@
     "type": "project",
     "license": "MIT",
     "scripts": {
-        "spec:run": "vendor/bin/phpspec run",
-        "spec:desc": "vendor/bin/phpspec describe"
+        "spec:run": "clear && XDEBUG_MODE=coverage vendor/bin/phpspec run --no-coverage",
+        "spec:run-cov": "XDEBUG_MODE=coverage composer spec:run  ",
+        "spec:desc": "XDEBUG_MODE=coverage vendor/bin/phpspec --no-coverage describe",
+        "spec:desc-cov": "XDEBUG_MODE=coverage vendor/bin/phpspec describe"
     },
     "autoload": {
         "psr-4": {
@@ -23,6 +25,7 @@
         }
     ],
     "require-dev": {
-        "phpspec/phpspec": "7.1"
+        "phpspec/phpspec": "7.1",
+        "friends-of-phpspec/phpspec-code-coverage": "^6.1"
     }
 }
