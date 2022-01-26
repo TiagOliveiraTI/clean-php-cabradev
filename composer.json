@@ -2,9 +2,18 @@
     "name": "tiagoliveirati/clean-php-cabradev",
     "type": "project",
     "license": "MIT",
+    "scripts": {
+        "spec:run": "vendor/bin/phpspec run",
+        "spec:desc": "vendor/bin/phpspec describe"
+    },
     "autoload": {
         "psr-4": {
-            "Tiagoliveirati\\CleanPhpCabradev\\": "src/"
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     },
     "authors": [
@@ -13,5 +22,7 @@
             "email": "dev.tiago.oliveira@gmail.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpspec/phpspec": "7.1"
+    }
 }
