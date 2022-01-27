@@ -26,6 +26,12 @@
     ],
     "require-dev": {
         "phpspec/phpspec": "7.1",
-        "friends-of-phpspec/phpspec-code-coverage": "^6.1"
+        "friends-of-phpspec/phpspec-code-coverage": "^6.1",
+        "phpro/grumphp": "^1.7"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpro/grumphp": true
+        }
     }
 }

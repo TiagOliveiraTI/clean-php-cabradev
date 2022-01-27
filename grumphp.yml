@@ -1,0 +1,34 @@
+grumphp:
+    tasks:
+        phpspec:
+            config_file: ~
+            format: ~
+            stop_on_failure: false
+            verbose: false
+        git_commit_message:
+          allow_empty_message: false
+          enforce_capitalized_subject: false
+          enforce_no_subject_punctuations: false
+          enforce_no_subject_trailing_period: true
+          enforce_single_lined_subject: true
+          type_scope_conventions:
+              types:
+                - build
+                - ci
+                - chore
+                - docs
+                - feat
+                - fix
+                - perf
+                - refactor
+                - revert
+                - style
+                - test
+              scopes: []
+              subject_pattern: >-
+                  ([a-zA-Z-0-9-_ #@'\/\"]+)
+          max_body_width: 72
+          max_subject_width: 80
+          case_insensitive: true
+          multiline: true
+          additional_modifiers: ''
