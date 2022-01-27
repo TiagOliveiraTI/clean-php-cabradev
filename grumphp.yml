@@ -1,10 +1,15 @@
 grumphp:
     tasks:
+        phan:
+          config_file: .phan/config.php
+          output_mode: text
+          output: null
+          triggered_by: [php]
         phpspec:
-            config_file: ~
-            format: ~
-            stop_on_failure: false
-            verbose: false
+          config_file: ~
+          format: ~
+          stop_on_failure: false
+          verbose: false
         git_commit_message:
           allow_empty_message: false
           enforce_capitalized_subject: false
