@@ -20,7 +20,7 @@ class EmailSpec extends ObjectBehavior
 
     public function it_should_have_a_email()
     {
-        $this->email()->shouldBe('valid@email.com');
+        $this->__toString()->shouldBe('valid@email.com');
     }
 
     public function it_should_throw_an_exception_when_email_is_invalid()

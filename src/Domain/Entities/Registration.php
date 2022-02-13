@@ -53,7 +53,6 @@ class Registration
     }
 
 
-
     /**
      * Get the value of dateOfRegistration
      *
